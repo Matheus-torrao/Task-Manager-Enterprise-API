@@ -50,7 +50,7 @@ PUT /tarefas/:id → atualiza tarefa
 
 DELETE /tarefas/:id → remove tarefa
 
- Metodologia Ágil
+## Metodologia Ágil
 
 Quadro Kanban no GitHub Projects com colunas:
 A Fazer, Em Progresso, Concluído.
@@ -59,19 +59,19 @@ O fluxo de trabalho é atualizado a cada etapa de desenvolvimento.
 
 Uma mudança de escopo foi simulada (ex.: adicionar prioridade de tarefa) para demonstrar adaptabilidade.
 
- Controle de Qualidade
+## Controle de Qualidade
 
 Testes automatizados básicos (exemplo: validar resposta da rota).
 
 Pipeline configurado com GitHub Actions para rodar os testes em cada push.
 
- Requisitos e UML
+## Requisitos e UML
 
 Requisitos Funcionais: cadastrar, listar, editar e excluir tarefas.
 
 Requisitos Não Funcionais: simplicidade, código legível, testes automatizados.
 
-Diagramas UML:
+## Diagramas UML:
 
 Casos de uso (usuário interage com CRUD de tarefas).
 
