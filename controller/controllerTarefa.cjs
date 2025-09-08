@@ -5,7 +5,7 @@ const model = require('../model/tarefas.json');
 const { execPath } = require('process');
 const { error } = require('console');
 
-const tarefas = model.tarefas;
+const tarefas = [];
 
 
 const rl = readline.createInterface({
