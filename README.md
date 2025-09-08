@@ -37,6 +37,7 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
    cd portfolio-Fecaf-SofwareEngineer
 
 **npm install**
+
 **node app.cjs**
 
 este as rotas usando Postman, Insomnia ou cURL.
@@ -52,39 +53,39 @@ DELETE /tarefas/:id → remove tarefa
 
 ## Metodologia Ágil
 
-Quadro Kanban no GitHub Projects com colunas:
-A Fazer, Em Progresso, Concluído.
+   Quadro Kanban no GitHub Projects com colunas:
+   A Fazer, Em Progresso, Concluído.
 
-O fluxo de trabalho é atualizado a cada etapa de desenvolvimento.
+   O fluxo de trabalho é atualizado a cada etapa de desenvolvimento.
 
-Uma mudança de escopo foi simulada (ex.: adicionar prioridade de tarefa) para demonstrar adaptabilidade.
+   Uma mudança de escopo foi simulada (ex.: adicionar prioridade de tarefa) para demonstrar adaptabilidade.
 
 ## Controle de Qualidade
 
-Testes automatizados básicos (exemplo: validar resposta da rota).
+   Testes automatizados básicos (exemplo: validar resposta da rota).
 
-Pipeline configurado com GitHub Actions para rodar os testes em cada push.
+   Pipeline configurado com GitHub Actions para rodar os testes em cada push.
 
 ## Requisitos e UML
 
-Requisitos Funcionais: cadastrar, listar, editar e excluir tarefas.
+   Requisitos Funcionais: cadastrar, listar, editar e excluir tarefas.
 
-Requisitos Não Funcionais: simplicidade, código legível, testes automatizados.
+   Requisitos Não Funcionais: simplicidade, código legível, testes automatizados.
 
 ## Diagramas UML:
 
-Casos de uso (usuário interage com CRUD de tarefas).
+   Casos de uso (usuário interage com CRUD de tarefas).
 
-Diagrama de classes (Tarefa, Controlador, Aplicação).
+   Diagrama de classes (Tarefa, Controlador, Aplicação).
 
-(Diagramas disponíveis na pasta docs/ – usar draw.io para edição).
+   (Diagramas disponíveis na pasta docs/ – usar draw.io para edição).
 
- Simulação de Mudança de Escopo
+   Simulação de Mudança de Escopo
 
-Adicionada a funcionalidade de prioridade em tarefas.
+   Adicionada a funcionalidade de prioridade em tarefas.
 
-Justificativa: permite que usuários priorizem atividades críticas, alinhado ao contexto ágil.
+   Justificativa: permite que usuários priorizem atividades críticas, alinhado ao contexto ágil.
 
-Atualização refletida no README e no quadro Kanban.
+   Atualização refletida no README e no quadro Kanban.
 
 
