@@ -5,9 +5,9 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server.cjs",
-    "test": "jest"
+    "test": "jest",
+    "dev": "node --watch server.cjs"
   },
-
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
@@ -19,7 +19,4 @@
     "jest": "^30.1.3",
     "supertest": "^7.1.4"
   }
-
-
- 
 }
