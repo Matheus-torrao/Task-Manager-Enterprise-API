@@ -1,4 +1,4 @@
-const app = require('../app.cjs');
+const app = require('./app.cjs');
 
 const PORT = 3000;
 
