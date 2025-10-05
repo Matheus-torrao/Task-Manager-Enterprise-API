@@ -34,10 +34,9 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
 1. Clone o repositório:
    ```bash
    git clone https://github.com/Matheus-torrao/CRUD_De_Tarefas.git
+   npm install
+   node app.cjs
 
-*npm install*
-
-*node app.cjs*
 
 este as rotas usando Postman, Insomnia ou cURL.
 Exemplos de rotas (ajuste se o seu código tiver endpoints diferentes):
