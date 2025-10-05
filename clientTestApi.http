@@ -1,4 +1,2 @@
-POST http://localhost:3000/cadastrar
-
 
 PUT http://localhost:3000/atualizar
