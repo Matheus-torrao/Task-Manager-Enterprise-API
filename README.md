@@ -19,7 +19,6 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
 
 
 ##  Estrutura do Repositório
-.
 ├── controller/ # Lógica de controle das rotas
 ├── model/ # Estrutura de dados em memória
 ├── app.cjs # Ponto de entrada da aplicação
