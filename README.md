@@ -15,15 +15,12 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
 - Atualizar tarefas
 - Remover tarefas
 
-*(CRUD completo usando Node.js, sem dependência de banco externo ou ORM).*
-
-
 ##  Estrutura do Repositório
 
    ├── controller/ # Lógica de controle das rotas<br>
-   ├── model/ # Estrutura de dados em memória
+   ├── model/ # Estrutura de dados em memória<br>
    ├── app.cjs # Ponto de entrada da aplicação<br>
-   ├── package.json # Dependências e scripts
+   ├── package.json # Dependências e scripts<br>
    ├── README.md # Este documento<br>
    └── .gitignore
 
@@ -38,8 +35,7 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
    node app.cjs
 
 
-este as rotas usando Postman, Insomnia ou cURL.
-Exemplos de rotas (ajuste se o seu código tiver endpoints diferentes):
+Teste as rotas usando Postman, Insomnia ou cURL.
 
 POST /tarefas → cria tarefa
 
@@ -76,7 +72,7 @@ DELETE /tarefas/:id → remove tarefa
 
    Diagrama de classes (Tarefa, Controlador, Aplicação).
 
-   (Diagramas disponíveis na pasta docs/ – usar draw.io para edição).
+   (Diagramas disponíveis na pasta docs/).
 
    Simulação de Mudança de Escopo
 
