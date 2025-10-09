@@ -15,8 +15,6 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
 - Atualizar tarefas
 - Remover tarefas
 
-*(CRUD completo usando Node.js, sem dependência de banco externo ou ORM).*
-
 
 ##  Estrutura do Repositório
 .
