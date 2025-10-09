@@ -5,7 +5,7 @@
 
 ##  Descrição do Projeto
 
-Este projeto faz parte do portfólio da disciplina de Engenharia de Software da **Fecaf**.  
+
 O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tarefas** aplicando **metodologias ágeis** (Kanban) e boas práticas de desenvolvimento em um repositório GitHub.
 
 ##  Funcionalidades
@@ -20,7 +20,7 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
 
 ##  Estrutura do Repositório
 
-   ├── controller/ # Lógica de controle das rotas/n
+   ├── controller/ # Lógica de controle das rotas
    ├── model/ # Estrutura de dados em memória
    ├── app.cjs # Ponto de entrada da aplicação
    ├── package.json # Dependências e scripts
