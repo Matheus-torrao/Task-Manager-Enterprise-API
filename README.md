@@ -22,9 +22,9 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
 
    ├── controller/ # Lógica de controle das rotas<br>
    ├── model/ # Estrutura de dados em memória
-   ├── app.cjs # Ponto de entrada da aplicação
+   ├── app.cjs # Ponto de entrada da aplicação<br>
    ├── package.json # Dependências e scripts
-   ├── README.md # Este documento
+   ├── README.md # Este documento<br>
    └── .gitignore
 
 
