@@ -5,7 +5,6 @@
 
 ##  Descrição do Projeto
 
-
 O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tarefas** aplicando **metodologias ágeis** (Kanban) e boas práticas de desenvolvimento em um repositório GitHub.
 
 ##  Funcionalidades
@@ -15,14 +14,15 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
 - Atualizar tarefas
 - Remover tarefas
 
-##  Estrutura do Repositório
 
-   ├── controller/ # Lógica de controle das rotas<br>
-   ├── model/ # Estrutura de dados em memória<br>
-   ├── app.cjs # Ponto de entrada da aplicação<br>
-   ├── package.json # Dependências e scripts<br>
-   ├── README.md # Este documento<br>
-   └── .gitignore
+##  Estrutura do Repositório
+.
+├── controller/ # Lógica de controle das rotas<br>
+├── model/ # Estrutura de dados em memória<br>
+├── app.cjs # Ponto de entrada da aplicação<br>
+├── package.json # Dependências e scripts<br>
+├── README.md # Este documento<br>
+└── .gitignore
 
 
 
@@ -33,7 +33,6 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
    git clone https://github.com/Matheus-torrao/CRUD_De_Tarefas.git
    npm install
    node app.cjs
-
 
 Teste as rotas usando Postman, Insomnia ou cURL.
 
@@ -72,7 +71,7 @@ DELETE /tarefas/:id → remove tarefa
 
    Diagrama de classes (Tarefa, Controlador, Aplicação).
 
-   (Diagramas disponíveis na pasta docs/).
+   (Diagramas disponíveis na pasta docs/ – usar draw.io para edição).
 
    Simulação de Mudança de Escopo
 
