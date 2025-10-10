@@ -24,7 +24,7 @@ app.get('/',  async function (req, res) {
     let menu = controller.menu();
     let question = controller.questUser();
     res.status(200);
-    return res.json({message:`Passou aqui!`});
+    return res.json({message:`Servidor Funcionando!`});
 });
 
 app.get('/visualizar', async function (req,res) {
