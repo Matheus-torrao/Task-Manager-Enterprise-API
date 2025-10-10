@@ -15,6 +15,6 @@ describe("Testando servidor", () => {
   it("Deve responder na rota raiz / com status 200", async () => {
     const res = await request(server).get("/");
     expect(res.statusCode).toBe(200);
-    expect(res.body).toHaveProperty("message", "Passou aqui!");
+    expect(res.body).toHaveProperty("message", "Servidor Funcionando");
   });
 });
