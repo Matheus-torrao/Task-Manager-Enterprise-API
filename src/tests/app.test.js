@@ -1,4 +1,4 @@
-const prisma = require('../generated/prisma');
+const { prisma } = require('../db.cjs');
 
 
 describe('Testes da Tabela Tarefa', () => {
