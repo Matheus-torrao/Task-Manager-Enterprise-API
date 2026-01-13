@@ -1,11 +1,13 @@
 const { PrismaClient } = require('@prisma/client');
-const dotenv = require('dotenv');
-const prisma = new PrismaClient({
-    datasourceURL: {
-        db: {
-            url: process.env.DATABASE_URL,
-        },
-    },
-});
-console.log('Conexão com o banco de dados estabelecida');
+const path = require('path');
+
+// Mantemos o que funcionou para carregar o .env
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+
+console.log('--- Sistema de Banco de Dados ---');
+console.log('Conexão configurada:', process.env.DATABASE_URL ? 'OK' : 'FALHA');
+
+// Use o construtor VAZIO. O Prisma 7 lerá o DATABASE_URL automaticamente.
+const prisma = new PrismaClient();
+
 module.exports = { prisma };
