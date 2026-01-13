@@ -1,4 +1,4 @@
-const tarefaService = require('../service/tarefaService.cjs');
+const tarefaService = require('../services/tarefaService');
 
 const tarefaController = {
   async criar(req,res) { 
@@ -24,6 +24,15 @@ const tarefaController = {
       return res.status(200).json(tarefa);
     } catch (error) {
       return res.status(500).json({ error: 'Erro ao buscar tarefa por ID' });
+    }
+  },
+  async excluir (req,res) {
+    try {
+      const tarefa = await tarefaService.excluirTarefa(req.params.id);
+      if(!tarefa) return res.status(404).json({error: 'Tarefa não encontrada'});
+      return res.status(200).json(tarefa);
+    } catch (error){
+      return res.status(500).json({error: 'Não foi possivel Excluir tarefa'})
     }
   }
 };
