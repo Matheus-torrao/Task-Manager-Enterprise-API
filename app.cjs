@@ -1,12 +1,10 @@
 
 const express = require('express');
 const cors = require ('cors');
-const bodyParser = require('body-parser');
 
 // Configuração de Middlewares
 const app = express();
 app.use(cors());
-app.use(bodyParser.json());
 app.use(express.json());
 
 // Importando as rotas e aplicando um Roteador prefixo
@@ -20,7 +18,7 @@ app.get('/', (req, res) => {
 
 const PORT = 3000
 app.listen(PORT, ()=>{
-    console.log(`Servidor rodando em http://localhost${PORT}`);
+    console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
 
 module.exports = app;
