@@ -9,6 +9,7 @@ const tarefaController = {
       res.status(500).json({ error: 'Erro ao criar tarefa' });
     }
   },
+
   async listar(req,res) {
     try {
       const tarefas = await tarefaService.listarTarefas();
@@ -17,6 +18,7 @@ const tarefaController = {
       res.status(500).json({ error: 'Erro ao listar tarefas' });
     }
   },
+
   async buscarPorID(req,res) {
     try {
       const tarefa = await tarefaService.buscarPorID(req.params.id);
@@ -26,6 +28,7 @@ const tarefaController = {
       return res.status(500).json({ error: 'Erro ao buscar tarefa por ID' });
     }
   },
+
   async atualizar(req, res) {
     try {
       const tarefa = await tarefaService.atualizarTarefa(req.params.id, req.body);
@@ -37,6 +40,7 @@ const tarefaController = {
       return res.status(500).json({ error: 'Erro ao atualizar tarefa' });
     }
   },
+  
   async excluir (req,res) {
     try {
       const tarefa = await tarefaService.excluirTarefa(req.params.id);
