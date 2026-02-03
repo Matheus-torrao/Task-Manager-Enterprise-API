@@ -1,25 +1,33 @@
 {
   "name": "portfolio-fecaf-softwareengineer",
   "version": "1.0.0",
-  "main": "server.cjs",
-  "type": "commonjs",
+  "main": "app.cjs",
   "scripts": {
-    "start": "node server.cjs",
+    "start": "node app.cjs",
     "test": "jest",
-    "dev": "node --watch app.cjs"
+    "dev": "node --watch app.cjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.2.0",
     "@prisma/client": "^7.2.0",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "nodemon": "^3.1.11",
+    "pg": "^8.17.1",
     "readline": "^1.3.0"
   },
   "devDependencies": {
+    "@types/node": "^25.0.9",
+    "@types/pg": "^8.16.0",
     "dotenv": "^17.2.3",
+    "eslint": "^9.39.2",
     "jest": "^30.1.3",
     "prisma": "^7.2.0",
-    "supertest": "^7.1.4"
+    "supertest": "^7.1.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }

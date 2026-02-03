@@ -1,11 +1,6 @@
-const { PrismaClient } = require('@prisma/client');
-const dotenv = require('dotenv');
-const prisma = new PrismaClient({
-    datasourceURL: {
-        db: {
-            url: process.env.DATABASE_URL,
-        },
-    },
-});
-console.log('Conexão com o banco de dados estabelecida');
-module.exports = { prisma };
+const { PrismaClient } = require('./generate/prisma');
+
+const prisma = new PrismaClient();
+module.exports = prisma;
+console.log('--- Sistema de Banco de Dados ---');
+console.log('Conexão configurada:', process.env.DATABASE_URL ? 'OK' : 'FALHA');

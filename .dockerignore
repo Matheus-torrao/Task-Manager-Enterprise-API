@@ -1,0 +1,4 @@
+node_modules
+rpm-debug.log
+docker-compose.yml
+.dockerignore
