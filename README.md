@@ -13,6 +13,7 @@ O objetivo é o desenvolvimento de um sistema de **Gerenciamento de tarefas** ap
 - Remoção definitiva de registros.
 
 ```text
+
 ├── src/
 │   ├── routes/      # Definição dos endpoints e roteamento das requisições
 │   ├── controllers/ # Orquestração da requisição (recebe dados e envia resposta)
@@ -26,6 +27,7 @@ O objetivo é o desenvolvimento de um sistema de **Gerenciamento de tarefas** ap
 ##  Como Executar o Projeto
 
 1. Clone o repositório:
+
    ```bash
    git clone https://github.com/Matheus-torrao/Task-Manager-Enterprise-API.git
 2. Via Docker
@@ -41,18 +43,20 @@ O objetivo é o desenvolvimento de um sistema de **Gerenciamento de tarefas** ap
       Comando para iniciar Servidor: **npm run dev**
 
 Testando as Rotas:
+
 | Método | Rota | Descrição |
 | :--- | :--- | :--- |
 | **POST** | `/tarefas` | Cria uma nova tarefa |
 | **GET** | `/tarefas` | Lista todas as tarefas cadastradas |
 | **PUT** | `/tarefas/:id` | Atualiza uma tarefa existente pelo ID |
 | **DELETE** | `/tarefas/:id` | Remove uma tarefa do banco de dados |
+
 ### Exemplo de Corpo Json para o **POST**:
 
 ```json
 {
    "titulo": "Titulo tarefa",
-   "descricão": "Descrição da tarefa",
+   "descricao": "Descrição da tarefa",
    "prioridade": "Prioridade da tarefa"
 }
 
