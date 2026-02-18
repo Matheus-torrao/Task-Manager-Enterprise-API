@@ -5,7 +5,7 @@ O objetivo é o desenvolvimento de um sistema de **Gerenciamento de tarefas** ap
 
 ##  Estrutura do Repositório (Arquitetura em Camadas):
 
-```text
+```
 ├── src/
 │   ├── routes/      # Definição dos endpoints e roteamento das requisições
 │   ├── controllers/ # Orquestração da requisição (recebe dados e envia resposta)
@@ -15,7 +15,7 @@ O objetivo é o desenvolvimento de um sistema de **Gerenciamento de tarefas** ap
 ├── docker-compose.yml # Orquestração de containers (Postgres 18 + API)
 ├── package.json     # Dependências e scripts do projeto
 └── README.md        # Documentação técnica
-
+```
 ##  Funcionalidades
 - Criar tarefas com níveis de prioridade.
 - Listagem completa de atividades.
