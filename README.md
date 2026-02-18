@@ -11,13 +11,14 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
 
 - Criar tarefas
 - Listar tarefas
+- Buscar por Id
 - Atualizar tarefas
 - Remover tarefas
 
 
 ##  Estrutura do Repositório
 
-├── controller/ # Lógica de controle das rotas<br>
+├── controller/ # Lógica de controle que herda funções da pasta services<br>
 ├── model/ # Estrutura de dados em memória<br>
 ├── app.cjs # Ponto de entrada da aplicação<br>
 ├── package.json # Dependências e scripts<br>
