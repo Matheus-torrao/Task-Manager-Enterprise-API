@@ -34,15 +34,19 @@ O objetivo é o desenvolvimento de um sistema de **Gerenciamento de tarefas** ap
    Comando para subir container (API + Banco de Dados):
    ```bash
       docker compose up -d
+   ```
    Comando para executar migrations para criação das tabelas:
    ```bash
       docker exec -it backend_api npx prisma migrate dev --name init
+   ```
 3. Execução Local
-   **npm install**
+   ```
+   npm install
    Crie um arquivo *.env* na raiz do projeto com sua string de conexão.
    Gere o Prisma Client e rode as migrations.
-      Comandos: **npx prisma generate** | **npx prisma migrate dev**
-      Comando para iniciar Servidor: **npm run dev**
+      Comandos: npx prisma generate | npx prisma migrate dev
+      Comando para iniciar Servidor: npm run dev
+   ```
 
 Testando as Rotas:
 
