@@ -5,7 +5,7 @@
 
 ##  Descrição do Projeto
 
-O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tarefas** aplicando **metodologias ágeis** (Kanban) e boas práticas de desenvolvimento em um repositório GitHub.
+O objetivo é o desenvolvimento de um sistema de **Gerenciamento de tarefas** aplicando **metodologias ágeis** e boas práticas de desenvolvimento.
 
 ##  Funcionalidades
 
@@ -13,37 +13,51 @@ O objetivo é simular o desenvolvimento de um sistema de **gerenciamento de tare
 - Listar tarefas
 - Buscar por Id
 - Atualizar tarefas
-- Remover tarefas
-
+- Remover tarefas por Id
 
 ##  Estrutura do Repositório
 
-├── controller/ # Lógica de controle que herda funções da pasta services<br>
-├── model/ # Estrutura de dados em memória<br>
-├── app.cjs # Ponto de entrada da aplicação<br>
-├── package.json # Dependências e scripts<br>
-├── README.md # Este documento<br>
-└── .gitignore
-
-
+├── src/
+│   ├── routes/      # Definição dos endpoints e roteamento das requisições
+│   ├── controllers/ # Orquestração da requisição (recebe dados e envia resposta)
+│   ├── services/    # Regras de negócio e comunicação direta com o Prisma Client
+│   └── app.cjs      # Ponto de entrada e configuração do servidor Express
+├── prisma/          # Schema do banco de dados e arquivos de migração
+├── docker-compose.yml # Orquestração de containers (Postgres 18 + API)
+├── package.json     # Dependências e scripts do projeto
+└── README.md        # Documentação técnica
 
 ##  Como Executar o Projeto
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Matheus-torrao/CRUD_De_Tarefas.git
-   npm install
-   node app.cjs
+   git clone https://github.com/Matheus-torrao/Task-Manager-Enterprise-API.git
+2. Via Docker
+   Comando para subir container (API + Banco de Dados): 
+      **docker compose up -d**
+   Comando para executar migrations para criação das tabelas:
+      **docker exec -it backend_api npx prisma migrate dev --name init**
+3. Execução Local
+   **npm install**
+   Crie um arquivo **.env** na raiz do projeto com sua string de conexão.
+   Gere o Prisma Client e rode as migrations.
+      Comandos: **npx prisma generate** | **npx prisma migrate dev**
+      Comando para iniciar Servidor: **npm run dev**
 
-Teste as rotas usando Postman, Insomnia ou cURL.
-
-POST /tarefas → cria tarefa
-
-GET /tarefas → lista todas
-
-PUT /tarefas/:id → atualiza tarefa
-
-DELETE /tarefas/:id → remove tarefa
+Testando as Rotas:
+| Método | Rota | Descrição |
+| :--- | :--- | :--- |
+| **POST** | `/tarefas` | Cria uma nova tarefa |
+| **GET** | `/tarefas` | Lista todas as tarefas cadastradas |
+| **PUT** | `/tarefas/:id` | Atualiza uma tarefa existente pelo ID |
+| **DELETE** | `/tarefas/:id` | Remove uma tarefa do banco de dados |
+### Exemplo de Corpo Json para o **POST**:
+```json
+{
+   "titulo": "Titulo tarefa",
+   "descricão": "Descrição da tarefa",
+   "prioridade": "Prioridade da tarefa"
+}
 
 ## Metodologia Ágil
 
